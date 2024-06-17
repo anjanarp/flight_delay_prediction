@@ -17,45 +17,50 @@ README.md: This file!
 
 The datapreproc.ipynb notebook performs the following tasks:
 
-Loads flight data for years 2016 and 2017 for specified airports (ATL, CLT, DEN, DFW, EWR, IAH, JFK, LAS, LAX, MCO, MIA, ORD, PHX, SEA, SFO).
-Loads weather data for the corresponding airports and timeframes.
-Merges flight and weather data based on airport codes and timestamps.
-Selects relevant features for analysis (windspeed, wind direction, precipitation, visibility, pressure, cloud cover, dew point, wind gust, temperature, wind chill, humidity, departure delay, and arrival delay).
-Handles missing values and potential data cleaning procedures (replace as needed).
+    Loads flight data for years 2016 and 2017 for specified airports (ATL, CLT, DEN, DFW, EWR, IAH, JFK, LAS, LAX, MCO, MIA, ORD, PHX, SEA, SFO).
+    
+    Loads weather data for the corresponding airports and timeframes.
+    
+    Merges flight and weather data based on airport codes and timestamps.
+    
+    Selects relevant features for analysis (windspeed, wind direction, precipitation, visibility, pressure, cloud cover, dew point, wind gust,     
+    temperature, wind chill, humidity, departure delay, and arrival delay).
+    
+    Handles missing values and potential data cleaning procedures (replace as needed).
 
 **Exploratory Data Analysis (EDA)**
 
-The eda.ipynb notebook explores the merged dataset to understand:
-
-Distribution of arrival delay times.
-
-Correlations between arrival delays and other relevant features.
-
-Visualizations to identify potential patterns or relationships.
+    The eda.ipynb notebook explores the merged dataset to understand:
+    
+    Distribution of arrival delay times.
+    
+    Correlations between arrival delays and other relevant features.
+    
+    Visualizations to identify potential patterns or relationships.
 
 **Classification Models**
 
 The following classification models were trained and evaluated in separate notebooks (logistic_model.ipynb, decisiontree.ipynb, extratrees.ipynb, xgboost.ipynb, and randomforest.ipynb):
 
 Logistic Regression: A model for binary classification problems like flight delay prediction.
-
-Decision Tree: A tree-based model that learns a series of decision rules to classify flights.
-
-Extra Trees Classifier: An ensemble model of decision trees that improves upon a single decision tree.
-
-XGBoost: A gradient boosting algorithm ombine predictions from multiple weaker models to create a stronger overall model.
-
-Random Forest: A ensemble method that averages predictions from multiple decision trees for improved robustness.
+    
+    Decision Tree: A tree-based model that learns a series of decision rules to classify flights.
+    
+    Extra Trees Classifier: An ensemble model of decision trees that improves upon a single decision tree.
+    
+    XGBoost: A gradient boosting algorithm ombine predictions from multiple weaker models to create a stronger overall model.
+    
+    Random Forest: A ensemble method that averages predictions from multiple decision trees for improved robustness.
 
 **Evaluation Metrics**
 
 Each classification model is evaluated using...
 
-Accuracy: Proportion of correctly classified flights (delayed vs. not delayed).
-
-Confusion Matrix: Visualizes the distribution of true vs. predicted delays.
-
-Classification Report: Provides a detailed breakdown of model performance metrics (precision, recall, F1-score, support).
+    Accuracy: Proportion of correctly classified flights (delayed vs. not delayed).
+    
+    Confusion Matrix: Visualizes the distribution of true vs. predicted delays.
+    
+    Classification Report: Provides a detailed breakdown of model performance metrics (precision, recall, F1-score, support).
 
 You can adjust hyperparameters within each model to potentially improve model performance. 
 
@@ -63,23 +68,23 @@ You can adjust hyperparameters within each model to potentially improve model pe
 
 The following regression models were trained and evaluated in separate notebooks (linearregressor.ipynb, extratreesregressor.ipynb, xgboostregressor.ipynb, and randomforestregressor.ipynb):
 
-Linear Regression: A model that learns a linear relationship between features and arrival delay times.
-
-Extra Trees Regressor: Ensemble regression model based on decision trees.
-
-XGBoost Regressor: Gradient boosting algorithm for regression tasks.
-
-Random Forest Regressor: Ensemble regression model using random forests.
+    Linear Regression: A model that learns a linear relationship between features and arrival delay times.
+    
+    Extra Trees Regressor: Ensemble regression model based on decision trees.
+    
+    XGBoost Regressor: Gradient boosting algorithm for regression tasks.
+    
+    Random Forest Regressor: Ensemble regression model using random forests.
 
 **Evaluation Metrics**
 
 Each regression model is evaluated using:
 
-Mean Squared Error (MSE): Average squared difference between predicted and actual delay times (lower is better).
-
-Root Mean Squared Error (RMSE): Square root of MSE (easier to interpret in units of delay minutes).
-
-R-squared: Proportion of variance in arrival delay explained by the model (higher is better).
+    Mean Squared Error (MSE): Average squared difference between predicted and actual delay times (lower is better).
+    
+    Root Mean Squared Error (RMSE): Square root of MSE (easier to interpret in units of delay minutes).
+    
+    R-squared: Proportion of variance in arrival delay explained by the model (higher is better).
 
 **Conclusion**
 
