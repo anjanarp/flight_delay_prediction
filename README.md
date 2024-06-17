@@ -1,5 +1,5 @@
 # flight_delay_prediction
-Introduction
+**Introduction**
 
 This repository implements a two-stage machine learning system to predict flight arrival delays using historical flight and weather data.
 
@@ -78,14 +78,15 @@ Root Mean Squared Error (RMSE): Square root of MSE (easier to interpret in units
 
 R-squared: Proportion of variance in arrival delay explained by the model (higher is better).
 
+**Conclusion**
 
-**Results Summary**
+In this project, I  developed a two-stage predictive model to classify and predict flight delays using historical flight and weather data. The project involved data cleaning and preprocessing to merge flight data with corresponding hourly weather conditions at the departure airport. I explored various classification and regression models, ultimately selecting a Decision Tree classifier and an XGBoost regressor based on their performance metrics.
 
-THe Decision Tree using a Gini Index criterion with a max-depth of 8 had the highest accuracy of 81.2346% and performed the best among overall among all the classification models
+The Decision Tree classifier, with a maximum depth of 8 and utilizing the Gini criterion, achieved an accuracy of 81.2346%. The XGBoost regressor demonstrated a strong predictive capability with an R-squared value of 0.94. These models were integrated into a two-stage pipeline where the classifier first identified delayed flights, and the regressor then predicted the delay duration for these flights.
 
-The XGBoost Regressor performed the most accurately among all the models with a R-squared 0.935879 value.
+For evaluation, I split the data into 80% for training and 20% for testing. The classifier was trained on the entire dataset, while the regressor was trained specifically on the subset of delayed flights. The testing set which was the set of 95982 delayed flights classified by the Decision Tree Classifier, confirmed the model's effectiveness, with the regressor achieving an improved R-squared value of 0.94 and an RMSE of 16.77 minutes.
 
-**2-stage Predictive Pipeline**
+**Business Interpretation**
 
-The 2_state_predictor.ipynb script employs a decision tree classifier which predicts whether flights in the test set (y_test) will be delayed. These predictions are then used to filter the features in X_test. The filtered data is fed into an XGBoost Regressor. This regressor is trained only on delayed flight data from the original dataset. Its purpose is to predict the delay duration for flights identified as 'Delayed' by the decision tree classifier.
+From a business perspective, this two-stage predictive model provides significant value. The ability to accurately classify and predict flight delays can enhance operational efficiency for airlines and improve customer satisfaction. By anticipating delays, airlines can proactively manage resources, optimize scheduling, and communicate effectively with passengers, thereby minimizing the disruptive impact of delays. The high accuracy and predictive power of the model ensure reliable insights, which can be crucial for decision-making processes in operations management and customer service enhancement. 
 
