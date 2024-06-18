@@ -42,7 +42,7 @@ The datapreproc.ipynb notebook performs the following tasks:
 
 The following classification models were trained and evaluated in separate notebooks (logistic_model.ipynb, decisiontree.ipynb, extratrees.ipynb, xgboost.ipynb, and randomforest.ipynb):
 
-Logistic Regression: A model for binary classification problems like flight delay prediction.
+    Logistic Regression: A model for binary classification problems like flight delay prediction.
     
     Decision Tree: A tree-based model that learns a series of decision rules to classify flights.
     
