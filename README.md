@@ -5,13 +5,13 @@ This repository implements a two-stage machine learning system to predict flight
 
 **Project Structure**
 
-data/: Stores instructions to access and structure the original flight and weather data needed for the project.
+**data/:** Stores instructions to access and structure the original flight and weather data needed for the project.
 
-notebooks/: Contains Jupyter Notebooks for data preprocessing, a CSV file with the merged datasets from preprocessing, exploratory data analysis (EDA), classification model training, and regression model training.
+**notebooks/:** Contains Jupyter Notebooks for data preprocessing, a CSV file with the merged datasets from preprocessing, exploratory data analysis (EDA), classification model training, and regression model training.
 
-results/ Two CSV files that stores performance measures for the classification models and regression models respectively as well as the python script to get the measures from each model (if you want to adjust the model and see its new performance, reinsert the script into model's JupyterNotebook)
+**results/:** Two CSV files that stores performance measures for the classification models and regression models respectively as well as the python script to get the measures from each model (if you want to adjust the model and see its new performance, reinsert the script into model's JupyterNotebook)
 
-README.md: This file! 
+**README.md:** This file! 
 
 **Data Preprocessing**
 
