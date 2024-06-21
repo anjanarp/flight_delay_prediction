@@ -45,7 +45,7 @@ The datapreproc.ipynb notebook performs the following tasks:
 **Target Variable Selection:**
     Classification: The "ArrDEl15" column, indicating arrival delay exceeding 15 minutes (binary classification), was chosen as the target variable (y) for the classification model.
     
-    Regression: The "ArrDelayMinutes" column, representing the actual delay duration in minutes, was used as the target variable (y) for the regression model. However, it was also included as a feature (predictor) in the training data (X) initially so that the dataset can be rebalanced and then it could be extrapolated out when creating the final rebalanced training set for regression models.
+Regression: The "ArrDelayMinutes" column, representing the actual delay duration in minutes, was used as the target variable (y) for the regression model. However, it was also included as a feature (predictor) in the training data (X) initially so that the dataset can be rebalanced and then it could be extrapolated out when creating the final rebalanced training set for regression models.
     
 **SMOTE for Imbalance Correction (Training Set Only):**
 To address the potential bias caused by imbalanced data in the training set, the Synthetic Minority Oversampling Technique (SMOTE) was applied. SMOTE generates synthetic samples for the minority class, flights with significant delays, to create a more balanced distribution within the training data, X_train and y_train.
