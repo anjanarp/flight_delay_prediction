@@ -161,7 +161,7 @@ This project explores training the best performing pipeline model (Decision Tree
     
     Potential Performance Improvement: By removing less informative features, we can sometimes improve model performance by reducing overfitting and focusing on the most relevant information.
     
-    This project demonstrates the trade-off between efficiency and performance. While selecting the top features often improves efficiency, it's crucial to ensure minimal degradation in model performance.  The pipeline_results.csv file provides insights into this trade-off for the specific models used in this analysis. The performance from training from the top 6 features barely affects the performance of the model from when it was trained on all 12 features.
+This project demonstrates the trade-off between efficiency and performance. While selecting the top features often improves efficiency, it's crucial to ensure minimal degradation in model performance.  The pipeline_results.csv file provides insights into this trade-off for the specific models used in this analysis. The performance from training from the top 6 features barely affects the performance of the model from when it was trained on all 12 features.
 
 The feature_importance.ipynb notebook outlines the code used for feature analysis. 
 
