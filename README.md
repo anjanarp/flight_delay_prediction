@@ -151,6 +151,23 @@ Focus on overall passenger experience and minimizing disruption: Choose the mode
 
 Prioritize avoiding large delays and missed connections: Choose the model with a lower MAE.
 
+**Feature importance** 
+Feature Importance measures the relative influence of each feature on a model's prediction. Understanding which features contribute most to the model's performance allows us to identify the key factors driving the model's predictions and potentially train models faster and with less memory by focusing on the most impactful feature.
+
+
+This project explores training the best performing pipeline model (Decision Trees + Extra Trees) with the top 6 features for each model within a pipeline. This approach offers several advantages such as ...
+
+    Increased Efficiency: Training models with fewer features can significantly reduce training time and resource consumption.
+    
+    Potential Performance Improvement: By removing less informative features, we can sometimes improve model performance by reducing overfitting and focusing on the most relevant information.
+    
+    This project demonstrates the trade-off between efficiency and performance. While selecting the top features often improves efficiency, it's crucial to ensure minimal degradation in model performance.  The pipeline_results.csv file provides insights into this trade-off for the specific models used in this analysis. The performance from training from the top 6 features barely affects the performance of the model from when it was trained on all 12 features.
+
+The feature_importance.ipynb notebook outlines the code used for feature analysis. 
+
+
+
+
 
 
 
