@@ -152,6 +152,7 @@ Focus on overall passenger experience and minimizing disruption: Choose the mode
 Prioritize avoiding large delays and missed connections: Choose the model with a lower MAE.
 
 **Feature importance** 
+
 Feature Importance measures the relative influence of each feature on a model's prediction. Understanding which features contribute most to the model's performance allows us to identify the key factors driving the model's predictions and potentially train models faster and with less memory by focusing on the most impactful feature.
 
 
