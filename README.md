@@ -105,7 +105,7 @@ False Positives (FP): Number of flights incorrectly classified as delayed.
 
 Interpretation: Precision measures the proportion of flights predicted as delayed that were actually delayed. It's the best performance indicator when the cost of misclassifying a flight as delayed is high, for example an unnecessary passenger rebooking or missed connections due to reassigned gates. A high precision ensures a low false alarm rate.
 
-3. Recall:
+**3. Recall:**
 
 Formula: Recall = TP / (TP + False Negatives)
 
@@ -113,7 +113,7 @@ False Negatives (FN): Number of flights incorrectly classified as on-time (actua
 
 Interpretation: Recall measures the proportion of actual delayed flights that were correctly predicted as delayed. It's important when missing a delayed flight prediction can have significant consequences, such as missed connections for passengers. A high recall ensures a low miss rate for actual delays.
 
-4. F1-Score:
+**4. F1-Score:**
 
 Formula: F1-Score = 2 * (Precision * Recall) / (Precision + Recall)
 
