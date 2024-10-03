@@ -147,9 +147,9 @@ Each regression model is evaluated using:
     
     R-squared: Represents the proportion of variance, or spread, in the actual arrival delay times that can be explained by the model. It ranges from 0 to 1, with higher values indicating a better fit. R-squared provides insight into the model's ability to explain the relationship between features and arrival delays. While it's not a direct measure of prediction accuracy, a high R-squared can indicate that the model has learned meaningful patterns from the data. This can be valuable for understanding the factors that contribute to flight delays.
 
-Focus on overall passenger experience and minimizing disruption: Choose the model with a lower RMSE.
+Focus on overall passenger experience and minimizing disruption: Choose the model with a lower MAE.
 
-Prioritize avoiding large delays and missed connections: Choose the model with a lower MAE.
+Prioritize avoiding large delays and missed connections: Choose the model with a lower RMSE.
 
 **Feature importance** 
 
